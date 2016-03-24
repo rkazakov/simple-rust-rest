@@ -1,3 +1,9 @@
+#[macro_use] extern crate nickel;
+
+use nickel::{Nickel, HttpRouter};
+
 fn main() {
-    println!("Hello, Rust!");
+    let mut server = Nickel::new();
+    server.get("**", middleware!("Hello, Rust!!!"));
+    server.listen("127.0.0.1:6767");
 }
