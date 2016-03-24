@@ -1,0 +1,6 @@
+[package]
+name = "simple-rust-rest"
+version = "0.1.0"
+authors = ["Ruslan Kazakov <ruslan.kazakov@gmail.com>"]
+
+[dependencies]
